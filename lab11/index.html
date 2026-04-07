@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasty Bites Restaurant</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="grid-container">
+
+    <header class="header-flex">
+        <div>
+            <h1>Tasty Bites Restaurant</h1>
+            <p>Delicious food made fresh daily</p>
+        </div>
+
+        <nav class="nav-flex">
+            <a href="#appetizers">Appetizers</a>
+            <a href="#mains">Main Dishes</a>
+            <a href="#desserts">Desserts</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- APPETIZERS -->
+        <section id="appetizers">
+            <h2>Appetizers</h2>
+
+            <div class="card-container">
+
+                <figure class="card">
+                   <picture>
+    <source
+        media="(max-width: 600px)"
+        srcset="images/salad-portrait.jpg 600w"
+        sizes="100vw"
+        width="600"
+        height="600">
+
+    <source
+        media="(max-width: 900px)"
+        srcset="images/salad-landscape.jpg 900w"
+        sizes="50vw"
+        width="900"
+        height="500">
+
+    <img src="images/salad.jpg"
+         srcset="images/salad-400.jpg 400w,
+                 images/salad-800.jpg 800w,
+                 images/salad-1200.jpg 1200w"
+         sizes="(max-width: 600px) 100vw,
+                (max-width: 900px) 50vw,
+                33vw"
+         width="800"
+         height="600"
+         alt="Fresh garden salad with mixed greens and tomatoes">
+                    </picture>
+
+                    <figcaption>
+                        <strong>Fresh Garden Salad</strong>
+                        <p>
+                            A crisp mix of fresh lettuce, cherry tomatoes,
+                            cucumbers, and our house vinaigrette dressing.
+                        </p>
+                        <p><strong>Price:</strong> $9</p>
+                    </figcaption>
+                </figure>
+
+            </div>
+        </section>
+
+        <!-- MAINS -->
+        <section id="mains">
+            <h2>Main Dishes</h2>
+
+            <div class="card-container">
+
+                <figure class="card">
+                    
+                    <img src="images/burger.jpg"
+                         srcset="images/burger-400.jpg 400w,
+                                 images/burger-800.jpg 800w,
+                                 images/burger-1200.jpg 1200w"
+                         sizes="(max-width: 600px) 100vw,
+                                (max-width: 900px) 50vw,
+                                33vw"
+                         width="800"
+                         height="600"
+                         alt="Grilled beef burger with cheese and fries">
+
+                    <figcaption>
+                        <strong>Classic Burger</strong>
+                        <p>
+                            A juicy grilled beef patty topped with melted cheese,
+                            lettuce, tomato, and served with crispy fries.
+                        </p>
+                        <p><strong>Price:</strong> $12</p>
+                    </figcaption>
+                </figure>
+
+                <figure class="card">
+                    
+                    <img src="images/pasta.jpg"
+                         srcset="images/pasta-400.jpg 400w,
+                                 images/pasta-800.jpg 800w,
+                                 images/pasta-1200.jpg 1200w"
+                         sizes="(max-width: 600px) 100vw,
+                                (max-width: 900px) 50vw,
+                                33vw"
+                         width="800"
+                         height="600"
+                         alt="Creamy Alfredo pasta topped with herbs">
+
+                    <figcaption>
+                        <strong>Alfredo Pasta</strong>
+                        <p>
+                            Creamy Alfredo sauce tossed with tender pasta
+                            and topped with fresh herbs and parmesan cheese.
+                        </p>
+                        <p><strong>Price:</strong> $14</p>
+                    </figcaption>
+                </figure>
+
+            </div>
+        </section>
+
+        <!-- DESSERTS -->
+        <section id="desserts">
+            <h2>Desserts</h2>
+
+            <div class="card-container">
+
+                <figure class="card">
+                   
+                    <img src="images/icecream.jpg"
+                         srcset="images/icecream-400.jpg 400w,
+                                 images/icecream-800.jpg 800w,
+                                 images/icecream-1200.jpg 1200w"
+                         sizes="(max-width: 600px) 100vw,
+                                (max-width: 900px) 50vw,
+                                33vw"
+                         width="800"
+                         height="600"
+                         alt="Vanilla ice cream with chocolate drizzle">
+
+                    <figcaption>
+                        <strong>Vanilla Ice Cream</strong>
+                        <p>
+                            Smooth vanilla ice cream served with a rich
+                            chocolate drizzle and a touch of whipped cream.
+                        </p>
+                        <p><strong>Price:</strong> $6</p>
+                    </figcaption>
+                </figure>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <h2>Menu Highlights</h2>
+
+        
+        <div class="card-container sidebar-card-container">
+            <figure class="card featured-card">
+                <img src="images/burger.jpg"
+                     srcset="images/burger-400.jpg 400w,
+                             images/burger-800.jpg 800w"
+                     sizes="(max-width: 600px) 100vw, 300px"
+                     width="800"
+                     height="600"
+                     alt="Grilled beef burger with cheese and fries">
+                <figcaption>
+                    <strong>⭐ Today's Special</strong>
+                    <p>Classic Burger — only $10 today!</p>
+                </figcaption>
+            </figure>
+        </div>
+
+        <table>
+            <caption>Popular Menu Items and Nutritional Info</caption>
+
+            <thead>
+                <tr>
+                    <th scope="col">Item</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Calories</th>
+                    <th scope="col">Dietary</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th scope="row">Classic Burger</th>
+                    <td>$12</td>
+                    <td>850</td>
+                    <td>—</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">Alfredo Pasta</th>
+                    <td>$14</td>
+                    <td>650</td>
+                    <td>V</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">Garden Salad</th>
+                    <td>$9</td>
+                    <td>300</td>
+                    <td>V, GF</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">Margherita Pizza</th>
+                    <td>$15</td>
+                    <td>900</td>
+                    <td>V</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">Vanilla Ice Cream</th>
+                    <td>$6</td>
+                    <td>400</td>
+                    <td>V</td>
+                </tr>
+            </tbody>
+
+        </table>
+    </aside>
+
+    <footer>
+        <p>© 2026 Tasty Bites Restaurant</p>
+    </footer>
+
+</body>
+</html>
